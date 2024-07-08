@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter Alarm</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Enter Alarm</h1>
+
+        <form action="/submit-alarms" method="post" id="alarmForm">
+            <input name="hours" type="number" id="hours" min="0" max="23" /> :
+            <input name="minutes" type="number" id="minutes" min="0" max="59" />
+            <br />
+            <input type="submit" value="Add Alarm" />
+        </form>
+
+        <ul id="alarmList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

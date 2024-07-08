@@ -1,0 +1,93 @@
+body {
+  background-color: #121212; /* Dark background color */
+  color: #ffffff; /* White text color */
+  font-family: Arial, sans-serif;
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+.container {
+  width: 90%; /* Adjusted width for mobile */
+  margin: 0 auto; /* Center the container horizontally */
+  padding-top: 20px; /* Add space at the top */
+  text-align: center;
+}
+
+h1 {
+  color: #ff9800; /* Orange heading color */
+  text-align: center; /* Center the heading */
+}
+
+/* Form styles */
+form {
+  margin-top: 20px; /* Add some space between heading and form */
+  text-align: center; /* Center the form */
+}
+
+/* Remove up and down arrows from number input fields */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  background-color: #424242; /* Darker background for input fields */
+  color: #ffffff; /* White text color */
+  border: 1px solid #757575; /* Border color */
+  padding: 5px; /* Decrease padding */
+  margin-bottom: 10px; /* Add space between inputs */
+  width: 30px; /* Set input fields width */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+input[type="submit"] {
+  background-color: #ff9800; /* Orange button color */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px; /* Add rounded corners */
+}
+
+input[type="submit"]:hover {
+  background-color: #ffab40; /* Darker orange color on hover */
+}
+
+#alarmList {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+#alarmList li {
+  margin-bottom: 10px; /* Add space between items */
+  padding: 10px; /* Add padding to list items */
+  background-color: #333333; /* Dark background for list items */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+
+.trash-icon {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  color: #ff3333; /* Red color for trash icon */
+  margin-left: 5px; /* Add some space between icon and text */
+}
+
+/* Media query for small screens (phones) */
+
+@media only screen and (max-width: 768px) {
+  .container {
+    height: 100vh; /* Full height of the viewport */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  form {
+    margin-top: 0px;
+  }
+}
